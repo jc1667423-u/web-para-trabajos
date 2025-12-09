@@ -1,0 +1,305 @@
+/* Estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+    color: #e8eaed;
+    line-height: 1.6;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.menu {
+    background: linear-gradient(135deg, #161b2e 0%, #0d1117 100%);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(59, 130, 246, 0.2);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.menu a {
+    color: #a0aec0;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.menu a:hover {
+    color: #60a5fa;
+    background: rgba(59, 130, 246, 0.1);
+}
+
+/* CONTENEDOR DE TARJETAS */
+.tarjetas {
+    background: #0a0a0a;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 3rem 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+/* TARJETAS  */
+.historia,
+.nosotros,
+.mision,
+.vision {
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s;
+    padding: 1.5rem;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgba(59, 130, 246, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.historia::after,
+.nosotros::after,
+.mision::after,
+.vision::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.5);
+    transition: background 0.3s;
+    z-index: 1;
+}
+
+.historia > *,
+.nosotros > *,
+.mision > *,
+.vision > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* HISTORIA */
+.historia {
+    width: 350px;
+    height: 500px;
+    background: url('img/historia.jpg') no-repeat center/cover, #1a1f2e;
+    box-shadow: 4px 4px 8px rgb(6, 144, 130);
+}
+
+.historia:hover {
+    transform: translateY(-8px);
+    border-color: #3b82f6;
+}
+
+.historia:hover::after {
+    background: rgba(59, 130, 246, 0.2);
+}
+
+/* NOSOTROS */
+.nosotros {
+    width: 250px;
+    height: 300px;
+    background: url('img/nosotros.jpg') no-repeat center/cover, #1a1f2e;
+    box-shadow: 4px 4px 8px gray;
+}
+
+.nosotros:hover {
+    transform: translateY(-8px);
+    border-color: #3b82f6;
+}
+
+.nosotros:hover::after {
+    background: rgba(59, 130, 246, 0.2);
+}
+
+/* MISIÓN */
+.mision {
+    width: 250px;
+    height: 400px;
+    background: url('img/mision.jpg') no-repeat center/cover, #1a1f2e;
+    box-shadow: 4px 4px 8px rgb(94, 172, 16);
+}
+
+.mision:hover {
+    transform: translateY(-8px);
+    border-color: #3b82f6;
+}
+
+.mision:hover::after {
+    background: rgba(59, 130, 246, 0.2);
+}
+
+/* VISIÓN */
+.vision {
+    width: 250px;
+    height: 400px;
+    background: url('img/vision.jpg') no-repeat center/cover, #1a1f2e;
+    box-shadow: 4px 4px 8px rgb(39, 125, 255);
+}
+
+.vision:hover {
+    transform: translateY(-8px);
+    border-color: #3b82f6;
+}
+
+.vision:hover::after {
+    background: rgba(59, 130, 246, 0.2);
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(135deg, #0d1117 0%, #161b2e 100%);
+    color: #e8eaed;
+    padding: 3rem 1rem 2rem;
+    border-top: 2px solid rgba(59, 130, 246, 0.2);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    color: #60a5fa;
+    font-weight: 600;
+    border-bottom: 2px solid #3b82f6;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 12px;
+}
+
+.footer ul a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul a:hover {
+    color: #60a5fa;
+}
+
+/* REDES SOCIALES */
+.redes-sociales a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.5rem;
+    color: #cbd5e1;
+    background: rgba(59, 130, 246, 0.1);
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+.redes-sociales a:hover {
+    background: #3b82f6;
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+    border-color: transparent;
+}
+
+/* FORMULARIO DE SUSCRIPCIÓN */
+.suscribete input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 2px solid rgba(59, 130, 246, 0.25);
+    outline: none;
+    font-size: 14px;
+    background: rgba(26, 31, 46, 0.6);
+    color: #e8eaed;
+    transition: all 0.3s;
+}
+
+.suscribete input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.suscribete input::placeholder {
+    color: #64748b;
+}
+
+.suscribete button {
+    width: 100%;
+    padding: 12px;
+    background: #3b82f6;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.suscribete button:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+}
+
+.copy {
+    text-align: center;
+    border-top: 1px solid rgba(59, 130, 246, 0.15);
+    padding-top: 1.5rem;
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* RESPONSIVO  */
+@media (max-width: 760px) {
+
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .historia,
+    .nosotros,
+    .mision,
+    .vision {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        min-height: 300px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}

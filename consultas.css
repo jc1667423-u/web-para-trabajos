@@ -1,0 +1,75 @@
+/* FORMULARIO  */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.formulario label {
+  font-size: 1rem;
+  margin-bottom: -0.8rem;
+  color: #cbd5e1;
+  text-align: left;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  border-radius: 12px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #3b82f6;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+}
+
+.formulario textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.formulario button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.formulario button:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+@keyframes aparecer {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
