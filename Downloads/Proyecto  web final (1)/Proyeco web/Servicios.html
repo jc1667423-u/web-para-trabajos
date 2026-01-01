@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Descubre todos nuestros servicios profesionales para el hogar: plomería, electricidad, gasfitería, pintura, jardinería, carpintería y albañilería." />
+  <meta name="keywords" content="servicios hogar, plomería, electricidad, pintura, jardinería, carpintería" />
+  <meta property="og:title" content="Nuestros Servicios - Profesionales para tu Hogar" />
+  <meta property="og:description"
+    content="Servicios profesionales verificados para todas las necesidades de tu hogar" />
+  <title>Servicios - Profesionales para tu Hogar</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="servicios.css" />
+  <link rel="stylesheet" href="formulario.css">
+  <link rel="stylesheet" href="consultas.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Menú de navegación -->
+  <nav class="menu">
+    <div id="menu_r"> &#9776 </div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html" class="activo">Servicios</a></li>
+      <li><a href="trabajadores.html">Trabajadores</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="mis-servicios.html">Mis Servicios</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="hero">
+    <h1>Nuestros Servicios</h1>
+    <p>Encuentra el profesional ideal para tu hogar</p>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="servicios">
+    <!-- Grid de servicios -->
+    <section class="grid-servicios">
+      <article class="servicio">
+        <h3>Plomería</h3>
+        <p>Mantenimiento de tuberías de agua potable y aguas residuales.</p>
+        <button
+          onclick="abrirModalContratar('Plomería', 'Mantenimiento de tuberías de agua potable y aguas residuales')">Contratar</button>
+      </article>
+
+      <article class="servicio">
+        <h3>Gasfitería</h3>
+        <p>Instalación y mantenimiento de gas.</p>
+        <button onclick="abrirModalContratar('Gasfitería', 'Instalación y mantenimiento de gas')">Contratar</button>
+      </article>
+
+      <article class="servicio">
+        <h3>Electricidad</h3>
+        <p>Instalación de focos, enchufes y mantenimiento eléctrico.</p>
+        <button
+          onclick="abrirModalContratar('Electricidad', 'Instalación de focos, enchufes y mantenimiento eléctrico')">Contratar</button>
+      </article>
+
+      <article class="servicio">
+        <h3>Pintura</h3>
+        <p>Remodelaciones y decoraciones de paredes y techos.</p>
+        <button
+          onclick="abrirModalContratar('Pintura', 'Remodelaciones y decoraciones de paredes y techos')">Contratar</button>
+      </article>
+
+      <article class="servicio">
+        <h3>Jardinería</h3>
+        <p>Mantenimiento de jardines y espacios verdes.</p>
+        <button
+          onclick="abrirModalContratar('Jardinería', 'Mantenimiento de jardines y espacios verdes')">Contratar</button>
+      </article>
+
+      <article class="servicio">
+        <h3>Carpintería</h3>
+        <p>Puertas, muebles y arreglos de madera.</p>
+        <button onclick="abrirModalContratar('Carpintería', 'Puertas, muebles y arreglos de madera')">Contratar</button>
+      </article>
+
+      <article class="servicio">
+        <h3>Albañilería</h3>
+        <p>Reparación de muros, techos, pisos y acabados.</p>
+        <button
+          onclick="abrirModalContratar('Albañilería', 'Reparación de muros, techos, pisos y acabados')">Contratar</button>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Enlaces -->
+      <section class="enlaces">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="trabajadores.html">Trabajadores</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </section>
+
+      <!-- Redes sociales -->
+      <section class="redes">
+        <h3>Síguenos</h3>
+        <div class="redes-sociales">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/51999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section class="contacto">
+        <h3>Contacto</h3>
+        <p>📞 +51 999 999 999</p>
+        <p>📧 profecionalhogar@gmail.com</p>
+      </section>
+
+      <!-- Suscripción -->
+      <section class="suscribete">
+        <h3>Suscríbete</h3>
+        <form>
+          <input type="email" placeholder="Tu correo" />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="copy">
+      <p>&copy; 2025 Encuentra el profesional que necesitas para tu hogar - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Modal para contratar servicios -->
+  <div id="modalContratar" class="modal">
+    <div class="modal-contenido">
+      <span id="cerrarModalContratar" class="cerrar">&times;</span>
+      <h3>Contratar Servicio</h3>
+      <h4 id="servicioNombre" style="color: #60a5fa; margin: 10px 0;"></h4>
+      <p id="servicioDescripcion" style="color: #cbd5e1; margin-bottom: 20px;"></p>
+
+      <form id="formContratar" class="formulario">
+        <input type="hidden" id="servicioSeleccionado">
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" placeholder="Tu número de teléfono" required>
+
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" placeholder="Dirección donde se realizará el servicio" required>
+
+        <label for="fecha">Fecha preferida</label>
+        <input type="date" id="fecha" required>
+
+        <label for="detalles">Detalles adicionales</label>
+        <textarea id="detalles" placeholder="Describe el trabajo que necesitas..."></textarea>
+
+        <button type="submit">Confirmar Contratación</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/menu_responsivo.js"></script>
+  <script src="js/contratar.js"></script>
+</body>
+
+</html>
