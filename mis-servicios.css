@@ -1,0 +1,139 @@
+/* Estilos para Mis Servicios */
+.hero-servicios {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.05));
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.hero-servicios h1 {
+    font-size: 2rem;
+    color: #f1f5f9;
+    margin-bottom: 0.5rem;
+}
+
+.hero-servicios p {
+    color: #60a5fa;
+    font-size: 1.1rem;
+}
+
+.contenedor-servicios {
+    padding: 2rem;
+    min-height: 50vh;
+}
+
+.grid-mis-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 20px 0;
+}
+
+.tarjeta-servicio {
+    background: #1a1f2e;
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 2px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+    border-color: #3b82f6;
+}
+
+.tarjeta-servicio h3 {
+    color: #60a5fa;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.tarjeta-servicio .info {
+    margin: 0.8rem 0;
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tarjeta-servicio .info i {
+    color: #60a5fa;
+    width: 20px;
+}
+
+.tarjeta-servicio .estado {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.estado.pendiente {
+    background: rgba(251, 191, 36, 0.2);
+    color: #fbbf24;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.tarjeta-servicio .detalles {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(59, 130, 246, 0.2);
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+.tarjeta-servicio button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: rgba(239, 68, 68, 0.2);
+    color: #fca5a5;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.tarjeta-servicio button:hover {
+    background: rgba(239, 68, 68, 0.3);
+    transform: scale(1.05);
+}
+
+.sin-servicios {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #cbd5e1;
+}
+
+.sin-servicios h2 {
+    color: #f1f5f9;
+    margin-bottom: 1rem;
+}
+
+.sin-servicios p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.sin-servicios .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+.sin-servicios .btn:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4);
+}

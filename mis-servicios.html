@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Servicios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mis-servicios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <nav class="menu">
+        <div id="menu_r"> &#9776 </div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="trabajadores.html">Trabajadores</a></li>
+            <li><a href="nosotros.html">nosotros</a></li>
+            <li><a href="mis-servicios.html" class="activo">Mis Servicios</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="hero-servicios">
+        <h1>Mis Servicios Contratados</h1>
+        <p id="nombreUsuario">Bienvenido</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenedor-servicios">
+        <div id="listaServicios" class="grid-mis-servicios">
+            <!-- Los servicios se cargarán aquí con JavaScript -->
+        </div>
+
+        <div id="sinServicios" class="sin-servicios" style="display: none;">
+            <i class="fas fa-inbox" style="font-size: 4rem; color: #60a5fa; margin-bottom: 1rem;"></i>
+            <h2>No tienes servicios contratados</h2>
+            <p>Explora nuestros servicios y contrata el que necesites</p>
+            <a href="servicios.html" class="btn">Ver Servicios</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <section class="enlaces">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="trabajadores.html">Trabajadores</a></li>
+                    <li><a href="nosotros.html">nosotros</a></li>
+                </ul>
+            </section>
+
+            <section class="redes">
+                <h3>Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/51999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </section>
+
+            <section class="contacto">
+                <h3>Contacto</h3>
+                <p>📞 +51 999 999 999</p>
+                <p>📧 profecionalhogar@gmail.com</p>
+            </section>
+
+            <section class="suscribete">
+                <h3>Suscríbete</h3>
+                <form>
+                    <input type="email" placeholder="Tu correo" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
+
+        <div class="copy">
+            <p>&copy; 2025 Encuentra el profesional que necesitas para tu hogar - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/menu_responsivo.js"></script>
+    <script src="js/mis-servicios.js"></script>
+</body>
+
+</html>
